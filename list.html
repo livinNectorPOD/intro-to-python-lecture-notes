@@ -6,74 +6,57 @@
 	<script type="starboard">
 # %% [markdown]
 # List playground
-
 # %% [markdown]
 ## Create a list from range
-
 # %% [python]
 l = list(range(10))
-
+print(l)	
 # %% [markdown]
 ## Accessing using index
-
 # %% [python]
-l[5]
-
+print(l[5])
 # %% [python]
-l[0]
-
+print(l[0])
 # %% [python]
-l[9]
-
-
+print(l[9])
 # %% [markdown]
 ## Appending to list
-
 # %% [python]
 l.append("sudarshan")
-l
-
+print(l)
 # %% [python]
 l.append("India")
-l
-
+print(l)
 # %% [python]
 l.append(2.71)
-l
-
+print(l)
+# %% [python]
+# append returns None so don't assign it like l=l.append(2.71), then l will become None
+print(l.append(2.71)) 
+print(l)
 # %% [markdown]
 ## Checking contents in a list
-
 # %% [python]
-5 in l
-
+print(5 in l)
 # %% [python]
--1 in l
-
+print(-1 in l)
 # %% [python]
-"sudarshan" in l
-
+print("sudarshan" in l)
 # %% [python]
-"sudhir" in l
-
+print("sudhir" in l)
 # %% [python]
-"India" in l
-
+print("India" in l)
 # %% [python]
-"india" in l
-
+print("india" in l)
 # %% [python]
-2.71 in l
-
+print(2.71 in l)
 # %% [python]
-2.710 in l
-
+print(2.710 in l)
 # %% [markdown]
 ## Changing the list
-
 # %% [python]
 l = list(range(100))
-l
+print(l)
   </script>
 </starboard-embed>
 

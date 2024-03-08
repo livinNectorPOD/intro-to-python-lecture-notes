@@ -1,0 +1,15 @@
+# %% [markdown]
+# Welcome to Starboard notebook
+# %% [markdown]
+## Input and printing
+# %% [python]
+name = input()
+print(f"Hello {name}")
+# %% [markdown]
+## Collections
+# %% [python]
+fruits = ["Apple", "Orange", "Mango", "Cherry", "Strawberry"]
+print(fruits)
+# %% [python]
+for fruit in fruits:
+    print(fruit)

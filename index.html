@@ -1,0 +1,23 @@
+<html>
+<div id="mount-point"></div>
+
+<script type="module">
+    import { StarboardEmbed } from "https://cdn.jsdelivr.net/npm/starboard-wrap@0.4.1/dist/index.min.js"
+    const mount = document.querySelector("#mount-point");
+    const urlParams = new URL(window.location.toLocaleString()).searchParams;
+    let notebookPath = urlParams.get('notebookPath');
+    if (!notebookPath){
+        notebookPath = "index.sb"
+    }
+    let response = await fetch(`./${notebookPath}`);
+    let notebook = await response.text();
+
+    const el = new StarboardEmbed({
+        notebookContent: notebook
+    });
+
+    mount.appendChild(el);
+</script>
+
+
+</html>

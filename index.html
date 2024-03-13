@@ -1,5 +1,6 @@
 <html>
 <div id="mount-point"></div>
+<script src="coi-serviceworker.js"></script>
 
 <script type="module">
     import { StarboardEmbed } from "https://cdn.jsdelivr.net/npm/starboard-wrap@0.4.1/dist/index.min.js"
@@ -14,7 +15,7 @@
 
     const el = new StarboardEmbed({
         notebookContent: notebook,
-        src: "https://cdn.starboard.gg/npm/starboard-notebook@0.14.1/dist/index.html"
+        src:"https://cdn.starboard.gg/npm/starboard-notebook@0.14.2/dist/index.html"
     });
 
     mount.appendChild(el);

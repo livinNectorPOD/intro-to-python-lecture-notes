@@ -1,15 +1,27 @@
 # %% [markdown]
 # Welcome to Starboard notebook
 # %% [markdown]
-## Input and printing
-# %% [python]
-name = input()
-print(f"Hello {name}")
-# %% [markdown]
-## Collections
+## Working out on scratch code
 # %% [python]
 fruits = ["Apple", "Orange", "Mango", "Cherry", "Strawberry"]
 print(fruits)
-# %% [python]
 for fruit in fruits:
+  if len(fruit) < 6:
     print(fruit)
+# %% [markdown]
+## Asking for help about functions and types
+# %% [python]
+useful_functions = [min, max, sorted, reversed, abs, any, all, map, filter]
+for f in useful_functions:
+  help(f)
+  print("\n","-"*20,"\n")
+# %% [python]
+help(list.count) # methods
+# %% [python]
+help(set.add) # methods
+# %% [python]
+help(str.replace) # methods
+# %% [python]
+help(list) # help about a type. In the bottom of the output you will see the useful functions
+# %% [python]
+help(str) # help about a type. In the bottom of the output you will see the useful functions
